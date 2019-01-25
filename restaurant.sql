@@ -1,0 +1,5 @@
+SET NAMES YTF8;
+DROP DATABASE IF EXITS
+restaurant;
+CREATE DATABASE restaurant CHARSET=UTF8;
+USE restaurant;
