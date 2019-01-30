@@ -9,6 +9,8 @@ const bodyParser=require('body-parser');
 const adminRouter=require('./routes/admin/admin');
 const categoryRouter =require("./routes/admin/category");
 const dishRouter =require("./routes/admin/dish");
+const settingRouter =require("./routes/admin/setting");
+const tableRouter =require("./routes/admin/table");
 
 
 var app=express();
@@ -30,3 +32,5 @@ app.use(bodyParser.json());  //把json格式的请求主体数据解析出来放
 app.use('/admin/category',categoryRouter);
 app.use('/admin',adminRouter);
 app.use('/admin/dish',dishRouter);
+app.use('/admin/setting',settingRouter);
+app.use('/admin/table',tableRouter);
